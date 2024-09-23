@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double firstNum, secondNum, answer1, answer2, answer3, answer4;
+    string sign;
+    
+    cout << "Enter First Number: " << endl;
+    cin >> firstNum;
+    cout << "Enter Second Number: " << endl;
+    cin >> secondNum;
+    cout << "Enter operation (+,-,*/): ";
+    cin >> sign;
+    
+    answer1 = firstNum+secondNum;
+    answer2 = firstNum-secondNum;
+    answer3 = firstNum*secondNum;
+    answer4 = firstNum/secondNum;
+    
+    if (sign == "+") {
+        cout << "The answer is: " << answer1;
+    } else if (sign == "-") {
+        cout << "The answer is: " << answer2;
+    } else if (sign == "*") {
+        cout << "The answer is: " << answer3;
+    } else if (sign == "/") {
+        cout << "The answer is: " << answer4;
+    } else {
+        cout << "Invalid input.";
+    }
+}
